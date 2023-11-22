@@ -1,0 +1,67 @@
+.matrix_input_header {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+
+.solve_btn {
+  padding: 10px 20px;
+  background: var(--main-active);
+  height: 40px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.matrix_container {
+  display: flex;
+  justify-content: center;
+}
+
+.matrix {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+
+  .input {
+    width: 30px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    label {
+      color: lightgray;
+    }
+  }
+
+  &__free_coeff {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .input_block {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+}
+
+.solutions {
+  margin-top: 15px;
+}
